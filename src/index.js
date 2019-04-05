@@ -1,51 +1,51 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-const Footer = () => {
-  return <footer>&copy; 2019</footer>;
-};
+
 function App() {
-  const data = {
-    age: 26,
-    skills: ["a", "b"]
-  };
+  const data = [
+    {
+      name: "Karoline",
+      hobbies: ["samba", "crochet"],
+      email: "byluethje@outlook.com"
+    },
+    {
+      name: "Jonas",
+      hobbies: ["js", "beer"],
+      email: "jofh@kea.dk"
+    },
+    {
+      name: "Thomas",
+      hobbies: ["magic", "football"],
+      email: "thomas_iversen@hotmail.com"
+    }
+  ];
+  const persons = data.map(person => {
+    return (
+      <Person
+        name={person.name}
+        hobbies={person.hobbies}
+        email={person.email}
+      />
+    );
+  });
   return (
     <div id="App">
-      {" "}
-      <Header />
-      <Person mydata={data} name="Ulla" />
-      <Person mydata={data} name="Bo" />
-      <Person mydata={data} name="Ib" />
-      <Person mydata={data} name="Åse" />
-      <Person mydata={data} name="Ole" />
-      <Footer />
+      <header>Header</header>
+      {persons}
+      <footer>Footer</footer>
     </div>
   );
 }
-function Header() {
-  return (
-    <header>
-      <h1>This is React</h1>
-      <section />
-    </header>
-  );
-}
 function Person(props) {
-  console.log(props.name);
   return (
     <article>
-      <h1>{props.name}</h1>
-      <p>I'm {props.mydata.age}</p>
-      <Skills skills={props.mydata.skills} />
+      <header>
+        <h1>{props.name}</h1>
+        <p>{props.email}</p>
+      </header>
+      <h2>Hobbies</h2>
     </article>
-  );
-}
-
-function Skills() {
-  return (
-    <ul>
-      <li>Skills here</li>
-    </ul>
   );
 }
 //JSX
