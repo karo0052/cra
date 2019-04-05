@@ -37,3 +37,8 @@
 7. Keys
 
 - fixing the error in the console
+
+8. CSS
+
+- importing
+- className
