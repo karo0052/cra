@@ -42,3 +42,9 @@
 
 - importing
 - className
+
+9. Conditional rendering
+
+- showing stuff if
+- short circuit evaluation
+- components as variables
