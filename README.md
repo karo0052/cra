@@ -9,3 +9,6 @@
 - pushing
 - branching
 - grabbing a remote branch
+
+Link til Jonas' github med video-forklaringer
+https://github.com/jofhatkea/cra
