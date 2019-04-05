@@ -29,3 +29,7 @@
 5. Spread operator
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+
+6. Import export
+
+- splitting up our code
