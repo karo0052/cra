@@ -1,12 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const Footer = () => {
+  return <footer>&copy; 2019</footer>;
+};
+function App() {
+  return (
+    <div id="App">
+      {" "}
+      <Header />
+      <Person />
+      <Person />
+      <Person />
+      <Person />
+      <Person />
+      <Footer />
+    </div>
+  );
+}
+function Header() {
+  return (
+    <header>
+      <h1>This is React</h1>
+    </header>
+  );
+}
+function Person() {
+  return (
+    <article>
+      <h1>Karoline</h1>
+      <p>Hi mom</p>
+    </article>
+  );
+}
+//JSX
+ReactDOM.render(<App />, document.getElementById("root"));

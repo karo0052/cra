@@ -9,3 +9,9 @@
 - pushing
 - branching
 - grabbing a remote branch
+
+2. functional components
+
+- multiple syntaxes
+- one parent
+- jsx
