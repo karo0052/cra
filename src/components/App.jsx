@@ -27,7 +27,7 @@ export default function App() {
     }
   ];
   const persons = data.map(person => {
-    return <Person key={p erson.id} {...person} />;
+    return <Person key={person.id} {...person} />;
   });
   return (
     <div id="App">
