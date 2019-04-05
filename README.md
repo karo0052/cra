@@ -25,3 +25,7 @@
 4. Rendering arrays
 
 - map
+
+5. Spread operator
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax

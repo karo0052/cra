@@ -7,27 +7,25 @@ function App() {
     {
       name: "Karoline",
       hobbies: ["samba", "crochet"],
-      email: "byluethje@outlook.com"
+      email: "byluethje@outlook.com",
+      kids: 1,
+      car: "Opel"
     },
     {
       name: "Jonas",
       hobbies: ["js", "beer"],
-      email: "jofh@kea.dk"
+      email: "jofh@kea.dk",
+      kids: 3
     },
     {
       name: "Thomas",
       hobbies: ["magic", "football"],
-      email: "thomas_iversen@hotmail.com"
+      email: "thomas_iversen@hotmail.com",
+      kids: 1
     }
   ];
   const persons = data.map(person => {
-    return (
-      <Person
-        name={person.name}
-        hobbies={person.hobbies}
-        email={person.email}
-      />
-    );
+    return <Person {...person} />;
   });
   return (
     <div id="App">
