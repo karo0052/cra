@@ -4,6 +4,7 @@ import Person from "./Person";
 export default function App() {
   const data = [
     {
+      id: 565,
       name: "Karoline",
       hobbies: ["samba", "crochet"],
       email: "byluethje@outlook.com",
@@ -11,12 +12,14 @@ export default function App() {
       car: "Opel"
     },
     {
+      id: 89,
       name: "Jonas",
       hobbies: ["js", "beer"],
       email: "jofh@kea.dk",
       kids: 3
     },
     {
+      id: 456,
       name: "Thomas",
       hobbies: ["magic", "football"],
       email: "thomas_iversen@hotmail.com",
@@ -24,7 +27,7 @@ export default function App() {
     }
   ];
   const persons = data.map(person => {
-    return <Person {...person} />;
+    return <Person key={p erson.id} {...person} />;
   });
   return (
     <div id="App">

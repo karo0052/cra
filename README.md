@@ -33,3 +33,7 @@
 6. Import export
 
 - splitting up our code
+
+7. Keys
+
+- fixing the error in the console
